@@ -1,0 +1,24 @@
+{
+  "name": "phaser3-test",
+  "version": "0.0.0",
+  "description": "",
+  "main": "./src/js/game.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pavle-goloskokovic/phaser3-test.git"
+  },
+  "author": "Pavle Goloskoković <pavle@prunegames.com> (http://prunegames.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pavle-goloskokovic/phaser3-test/issues"
+  },
+  "homepage": "https://github.com/pavle-goloskokovic/phaser3-test#readme",
+  "devDependencies": {
+    "phaser": "^3.0.0-beta.6",
+    "phaser3-examples": "github:photonstorm/phaser3-examples",
+    "stats.js": "github:pavle-goloskokovic/stats.js"
+  }
+}
