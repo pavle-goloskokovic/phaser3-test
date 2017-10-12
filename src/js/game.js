@@ -28,19 +28,27 @@ game.step = function() {
 function preload ()
 {
     this.load.image('logo', 'assets/images/logo.png');
+    this.load.image('pizza', 'assets/images/pizza.gif');
+    this.load.image('pizza-beer', 'assets/images/pizza-beer.jpg');
+    this.load.image('pizza-beeer', 'assets/images/pizza-beer.jpeg');
+
+    this.load.svg('homer', 'assets/images/homer.svg');
+
+    this.load.html('html', 'src/html/test.html');
 }
 
 function create ()
 {
-    this.add.image(window.innerWidth/2, window.innerHeight/2, 'logo');
+    var logo = this.add.image(0, 0, 'logo');
+    var pizza = this.add.image(window.innerWidth/4, window.innerHeight/4, 'pizza');
+    var html = this.add.image(window.innerWidth, window.innerHeight, 'html');
+    var pizzaBeer = this.add.image(window.innerWidth*3/4, window.innerHeight*3/4, 'pizza-beer');
+    var pizzaBeeer = this.add.image(window.innerWidth, window.innerHeight, 'pizza-beeer');
+    pizzaBeer.scaleX = pizzaBeer.scaleY = pizzaBeeer.scaleX = pizzaBeeer.scaleY = 0.3;
+
+    var homer = this.add.image(window.innerWidth/2, window.innerHeight/2, 'homer');
 
     var text = this.add.text(80, 80, 'Game Title: ' + this.game.config.gameTitle, { font: '16px Courier', fill: '#ffffff' });
-    /*text.originX = 2;
-    text.displayOriginX = 2;
-    text.displayOriginY = 2;
-    text.originY = 2;*/
-    console.log(text);
-
 }
 
 
